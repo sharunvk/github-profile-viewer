@@ -1,0 +1,65 @@
+avatar_url: "https://avatars.githubusercontent.com/u/6708?v=4"
+​​
+bio: null
+​​
+blog: "http://vinsol.com"
+​​
+company: "@vinsol "
+​​
+created_at: "2008-04-11T17:42:44Z"
+​​
+email: null
+​​
+events_url: "https://api.github.com/users/sid/events{/privacy}"
+​​
+followers: 6
+​​
+followers_url: "https://api.github.com/users/sid/followers"
+​​
+following: 0
+​​
+following_url: "https://api.github.com/users/sid/following{/other_user}"
+​​
+gists_url: "https://api.github.com/users/sid/gists{/gist_id}"
+​​
+gravatar_id: ""
+​​
+hireable: null
+​​
+html_url: "https://github.com/sid"
+​​
+id: 6708
+​​
+location: "San Francisco, CA"
+​​
+login: "sid"
+​​
+name: "Siddhaarth Verma"
+​​
+node_id: "MDQ6VXNlcjY3MDg="
+​​
+organizations_url: "https://api.github.com/users/sid/orgs"
+​​
+public_gists: 1
+​​
+public_repos: 0
+​​
+received_events_url: "https://api.github.com/users/sid/received_events"
+​​
+repos_url: "https://api.github.com/users/sid/repos"
+​​
+score: 1
+​​
+site_admin: false
+​​
+starred_url: "https://api.github.com/users/sid/starred{/owner}{/repo}"
+​​
+subscriptions_url: "https://api.github.com/users/sid/subscriptions"
+​​
+twitter_username: null
+​​
+type: "User"
+​​
+updated_at: "2022-08-15T15:37:01Z"
+​​
+url: "https://api.github.com/users/sid"

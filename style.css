@@ -18,14 +18,51 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 35px;
 }
 
 .input-bar {
     background-color: #3a86ff;
     border: none;
     height: 30px;
+    outline: none;
+    color: white;
+    font-weight: bolder;
 }
 
 .fa-icons {
     margin: 10px;
+    color: white;
+}
+
+.user-image {
+    border-radius: 50%;
+    width: 200px;
+}
+
+.outer-card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.inner-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.profile {
+    width: 45vw;
+    height: 150px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.cross:hover {
+    cursor: pointer;
 }

@@ -15,7 +15,7 @@
 		/>
 		<link rel="stylesheet" href="./style.css" />
 	</head>
-	<body ng-app="MyApp">
+	<body ng-app="MyApp" ng-controller="inputController">
 		<md-toolbar class="md-whiteframe-6dp" style="background: gray" layout="row">
 			<img
 				src="./components/github.svg"
@@ -25,15 +25,58 @@
 			<h1>Github Profile Viewer</h1>
 		</md-toolbar>
 		<div class="search-container">
-            <i class="fa-solid fa-magnifying-glass fa-icons"></i>
-            <input type="text" class="input-bar" placeholder="Search for users..." name="search" id="searchUser" onchange="searchUser()">
-            <i class="fa-solid fa-xmark fa-icons"></i>
-        </div>
+			<i class="fa-solid fa-magnifying-glass fa-icons"></i>
+			<input
+				type="text"
+				class="input-bar"
+				placeholder="Search for users..."
+				name="search"
+				id="searchUser"
+				ng-change="searchUser()"
+				ng-model="user"
+			/>
+			<i class="fa-solid fa-xmark fa-icons cross" ng-click="clearInput()"></i>
+		</div>
+
+		<div class="outer-card-container">
+			<div class="inner-card-container">
+				<md-card
+					ng-repeat="profile in usersArray track by $index"
+					class="profile"
+				>
+					<md-card-header>
+						<md-card-avatar>
+							<img
+								ng-src="{{profile.avatar_url}}"
+								class="md-card-image"
+								ng-class="user-image"
+								alt="{{profile.login}}"
+								style="width: 100px; border-radius: 50%"
+							/>
+						</md-card-avatar>
+						<md-card-header-text style="margin-left: 100px">
+							<span class="md-title">{{profile.name}}</span>
+							<span class="md-subhead">{{profile.bio | limitTo:80}}</span>
+							<span
+								class="md-subhead bold"
+								ng-show="profile.company.length >= 0"
+								><i class="fa-solid fa-laptop-code"></i>
+								{{profile.company}}</span
+							>
+							<span class="md-subhead"
+								><i class="fa-solid fa-user"></i> {{profile.login}}</span
+							>
+						</md-card-header-text>
+					</md-card-header>
+				</md-card>
+			</div>
+		</div>
 
 		<script src="./node_modules/angular/angular.js"></script>
 		<script src="./node_modules/angular-animate/angular-animate.js"></script>
 		<script src="./node_modules/angular-aria/angular-aria.js"></script>
 		<script src="./node_modules/angular-material/angular-material.js "></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 		<script src="./script.js"></script>
 	</body>
 </html>
