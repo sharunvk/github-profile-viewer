@@ -1,5 +1,6 @@
-angular.module("MyApp", ['ngMaterial', 'ngRoute'])
-    .controller("inputController", function ($scope, $http) {
+let MyApp = angular.module("MyApp", ['ngMaterial']);
+
+MyApp.controller("inputController", function ($scope, $http) {
         $scope.searchUser = () => {
             const options = {
                 method: "GET",
